@@ -1,4 +1,4 @@
-﻿# JobHunter
+# JobHunter
 
 Mural simples de vagas de estágio para desenvolvedores, com uma única tela e funcionamento offline no Android.
 
@@ -111,7 +111,7 @@ Use a branch `main` ou `master` para disparar a automação. Confira a branch at
 4. Em **Artifacts**, baixe **meu-aplicativo-apk**.
 5. Extraia o ZIP e instale `app-debug.apk` no Android.
 
-Nenhum push foi realizado durante a implementação. O workflow só poderá ser validado no serviço GitHub após o envio.
+Projeto enviado ao GitHub com autorização do aluno. O workflow instala explicitamente os pacotes do SDK Android utilizados pelo projeto.
 
 ## Screenshots reais
 
