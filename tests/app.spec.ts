@@ -5,8 +5,8 @@ test('lista, pesquisa, estado vazio, layout e uso sem rede', async ({ page, cont
   page.on('pageerror', error => errors.push(error.message));
   await page.goto('/');
   await expect(page.getByRole('article')).toHaveCount(5);
-  await mkdir('docs/screenshots', { recursive: true });
-  await page.screenshot({ path: 'docs/screenshots/inicio-mobile.png', fullPage: true });
+  await mkdir('test-results/screenshots', { recursive: true });
+  await page.screenshot({ path: 'test-results/screenshots/inicio-mobile.png', fullPage: true });
   const search = page.getByRole('searchbox');
   await search.fill('FRONT-END');
   await expect(page.getByRole('article')).toHaveCount(1);
@@ -14,7 +14,7 @@ test('lista, pesquisa, estado vazio, layout e uso sem rede', async ({ page, cont
   await search.fill('  codigo  ');
   await expect(page.getByRole('article')).toHaveCount(1);
   await expect(page.getByRole('article')).toContainText('Código Aberto');
-  await page.screenshot({ path: 'docs/screenshots/busca-mobile.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/busca-mobile.png', fullPage: true });
   await search.fill('inexistente');
   await expect(page.getByText('Nenhuma vaga encontrada')).toBeVisible();
   await page.getByRole('button', { name: 'Limpar busca' }).click();
@@ -27,6 +27,6 @@ test('lista, pesquisa, estado vazio, layout e uso sem rede', async ({ page, cont
     await page.setViewportSize({ width, height: 844 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBeTruthy();
   }
-  await page.screenshot({ path: 'docs/screenshots/inicio-desktop.png', fullPage: true });
+  await page.screenshot({ path: 'test-results/screenshots/inicio-desktop.png', fullPage: true });
   expect(errors).toEqual([]);
 });

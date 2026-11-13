@@ -54,7 +54,7 @@ npm run build
 npm run preview
 ```
 
-Para testar a busca e capturar novamente os screenshots (requer Microsoft Edge instalado):
+Para testar a busca e salvar capturas de teste em `test-results/screenshots/` (requer Microsoft Edge instalado):
 
 ```sh
 npm run build
@@ -113,15 +113,25 @@ Use a branch `main` ou `master` para disparar a automação. Confira a branch at
 
 Projeto enviado ao GitHub com autorização do aluno. O workflow instala explicitamente os pacotes do SDK Android utilizados pelo projeto.
 
-## Screenshots reais
+## Apresentação do aplicativo
 
-Capturas da aplicação executando no navegador Edge, em viewport móvel e desktop. Não são fotos de emulador nem mockups da splash nativa.
+Mockups com a interface do JobHunter em celulares e notebooks, apresentados em cenários com plano de fundo.
 
-| Tela inicial (390 px) | Busca por empresa |
+### Celular
+
+| Mesa com S Pen | Terrazzo |
 | --- | --- |
-| <img src="docs/screenshots/inicio-mobile.png" width="260" alt="Lista de vagas no celular"> | <img src="docs/screenshots/busca-mobile.png" width="260" alt="Busca por Código Aberto"> |
+| <img src="docs/mockups/inicio-mobile-desk-with-s-pen.png" width="400" alt="JobHunter em celular sobre mesa com S Pen"> | <img src="docs/mockups/inicio-mobile-terrazzo-flat-lay.png" width="400" alt="JobHunter em celular sobre superfície de terrazzo"> |
 
-![Tela desktop](docs/screenshots/inicio-desktop.png)
+### Notebook
+
+**Coworking**
+
+![JobHunter em notebook em um coworking](docs/mockups/inicio-desktop-coworking.png)
+
+**Mesa noturna**
+
+![JobHunter em notebook em uma mesa com iluminação noturna](docs/mockups/inicio-desktop-night-desk.png)
 
 ## Validação
 

@@ -9,3 +9,6 @@ android/.gradle/
 android/**/build/
 playwright-report/
 test-results/
+
+# Imagens alternativas mantidas apenas como referencia local
+docs/references/
